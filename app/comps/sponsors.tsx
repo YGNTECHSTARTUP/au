@@ -60,9 +60,9 @@ export default function SponsorsSection() {
             <SponsorCard imageUrl="/a-hub.jpeg" alt="A-Hub" />
 <SponsorCard imageUrl="/aicte.jpeg" alt="AICTE" />
 <SponsorCard imageUrl="/alcove.png" alt="Alcove" />
-<SponsorCard imageUrl="/au logo.png" alt="AU Logo" />
-<SponsorCard imageUrl="/au united.png" alt="AU United" />
-<SponsorCard imageUrl="/brainovision.png" alt="Brainovision" />
+<SponsorCard imageUrl="/au-logo.png" alt="AU Logo" />
+<SponsorCard imageUrl="/au-united.png" alt="AU United" />
+<SponsorCard imageUrl="/Brainovision.png" alt="Brainovision" />
 <SponsorCard imageUrl="/The Digifac.webp" alt="The Digifac" />
             </div>
           </div>
