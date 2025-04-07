@@ -1,0 +1,7 @@
+a-hub : JPEG
+AICTE : JPEG
+alcove: PNG
+au-logo: PNG
+AU united: PNG
+Brainovision: PNG
+The Digifac: WEBP

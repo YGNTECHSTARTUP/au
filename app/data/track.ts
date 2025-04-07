@@ -11,199 +11,166 @@ export interface Track {
   }
   
   
-export const trackData: Track[] = [
-  {
-    id: "fintech",
-    title: "FinTech Innovation",
-    subtitle: "Revolutionizing financial systems and services.",
-    description:
-      "This track focuses on innovative solutions in finance, including digital banking, cryptocurrency, blockchain applications, payment systems, and financial inclusion.",
-    image: "/waste.jpg",
-    // character: "/placeholder.svg?height=128&width=128",
-    features: [
-      "Digital banking solutions",
-      "Blockchain applications",
-      "Payment systems",
-      "Financial inclusion technologies",
-      "Cryptocurrency innovations",
-    ],
-    cta: "Explore FinTech",
-  },
-  {
-    id: "healthtech",
-    title: "HealthTech Advancements",
-    subtitle: "Transforming healthcare delivery and patient outcomes.",
-    description:
-      "Explore innovations in healthcare technology, from telemedicine and wearable health monitors to AI-powered diagnostics and personalized medicine solutions.",
-    image: "/waste.jpg",
-    features: [
-      "Telemedicine platforms",
-      "Health monitoring devices",
-      "AI diagnostics",
-      "Electronic health records",
-      "Remote patient monitoring",
-    ],
-    cta: "Discover HealthTech",
-  },
-  {
-    id: "edtech",
-    title: "EdTech Revolution",
-    subtitle: "Reimagining learning for the digital age.",
-    description:
-      "Discover technologies that are transforming education, from adaptive learning platforms and virtual classrooms to educational games and immersive learning experiences.",
-    image: "/waste.jpg",
-    features: [
-      "Adaptive learning platforms",
-      "Virtual classrooms",
-      "Educational games",
-      "Learning management systems",
-      "AR/VR educational experiences",
-    ],
-    cta: "Learn More",
-  },
-  {
-    id: "agritech",
-    title: "AgriTech Solutions",
-    subtitle: "Innovating for sustainable food systems.",
-    description:
-      "Explore technologies revolutionizing agriculture, including precision farming, IoT sensors, drone monitoring, vertical farming, and supply chain innovations.",
-    image: "/waste.jpg",
-    features: [
-      "Precision agriculture",
-      "IoT farm sensors",
-      "Drone crop monitoring",
-      "Vertical farming systems",
-      "Agricultural supply chain tech",
-    ],
-    cta: "Explore AgriTech",
-  },
-  {
-    id: "greentech",
-    title: "Sustainability and GreenTech",
-    subtitle: "Technologies for a sustainable future.",
-    description:
-      "Discover innovations addressing environmental challenges, from renewable energy and carbon capture to sustainable materials and circular economy solutions.",
-    image: "/waste.jpg",
-    features: [
-      "Renewable energy tech",
-      "Carbon capture solutions",
-      "Sustainable materials",
-      "Circular economy platforms",
-      "Climate monitoring systems",
-    ],
-    cta: "Go Green",
-  },
-  {
-    id: "retail",
-    title: "Retail and E-Commerce Tech",
-    subtitle: "Transforming the shopping experience.",
-    description:
-      "Explore technologies reshaping retail, from augmented reality shopping and personalized recommendations to inventory management and omnichannel solutions.",
-    image: "/waste.jpg",
-    features: [
-      "AR shopping experiences",
-      "AI-powered recommendations",
-      "Inventory management systems",
-      "Omnichannel retail solutions",
-      "Voice commerce",
-    ],
-    cta: "Shop the Future",
-  },
-  {
-    id: "mobility",
-    title: "Travel and Mobility",
-    subtitle: "Innovations in transportation and travel.",
-    description:
-      "Discover technologies transforming how we move, from electric vehicles and autonomous transportation to smart cities and travel planning platforms.",
-    image: "/waste.jpg",
-    features: [
-      "Electric vehicle tech",
-      "Autonomous transportation",
-      "Smart city mobility",
-      "Travel planning platforms",
-      "Shared mobility solutions",
-    ],
-    cta: "Explore Mobility",
-  },
-  {
-    id: "social",
-    title: "Social Impact Tech",
-    subtitle: "Technology for positive change.",
-    description:
-      "Explore innovations addressing social challenges, from accessibility tools and disaster response tech to platforms for community engagement and social services.",
-    image: "/waste.jpg",
-    features: [
-      "Accessibility technologies",
-      "Disaster response systems",
-      "Community engagement platforms",
-      "Social service innovations",
-      "Digital inclusion solutions",
-    ],
-    cta: "Make an Impact",
-  },
-  {
-    id: "logistics",
-    title: "Logistics and Supply Chain",
-    subtitle: "Optimizing global supply networks.",
-    description:
-      "Discover technologies transforming logistics, from blockchain for supply chain transparency to autonomous delivery, warehouse automation, and predictive analytics.",
-    image: "/waste.jpg",
-    features: [
-      "Blockchain supply tracking",
-      "Autonomous delivery",
-      "Warehouse automation",
-      "Predictive logistics analytics",
-      "Last-mile delivery solutions",
-    ],
-    cta: "Optimize Logistics",
-  },
-  {
-    id: "cybersecurity",
-    title: "Cybersecurity and Privacy",
-    subtitle: "Protecting digital assets and identities.",
-    description:
-      "Explore innovations in digital security, from zero-trust architectures and biometric authentication to privacy-preserving technologies and threat intelligence.",
-    image: "/waste.jpg",
-    features: [
-      "Zero-trust security frameworks",
-      "Biometric authentication",
-      "Privacy-preserving technologies",
-      "Threat intelligence platforms",
-      "Secure communication tools",
-    ],
-    cta: "Secure Your Future",
-  },
-  {
-    id: "web3",
-    title: "Decentralized Web (Web3)",
-    subtitle: "Building the internet of value.",
-    description:
-      "Discover technologies powering the decentralized web, from blockchain platforms and smart contracts to decentralized finance (DeFi) and non-fungible tokens (NFTs).",
-    image: "/waste.jpg",
-    features: [
-      "Blockchain platforms",
-      "Smart contract applications",
-      "Decentralized finance (DeFi)",
-      "Non-fungible tokens (NFTs)",
-      "Decentralized autonomous organizations",
-    ],
-    cta: "Enter Web3",
-  },
-  {
-    id: "wildcard",
-    title: "Wildcard (Open Innovation)",
-    subtitle: "Breakthrough ideas beyond categories.",
-    description:
-      "This track is for innovative solutions that don't fit neatly into other categories. Bring your most creative and groundbreaking ideas to solve emerging challenges.",
-    image: "/waste.jpg",
-    features: [
-      "Cross-domain innovations",
-      "Emerging technologies",
-      "Novel applications",
-      "Experimental solutions",
-      "Future-focused concepts",
-    ],
-    cta: "Think Outside the Box",
-  },
-]
-
+  export const trackData: Track[] = [
+    {
+      id: "waste-ai",
+      title: "Waste Reduction with AI",
+      subtitle: "Smarter ways to reduce waste using technology.",
+      description:
+        "Leverage artificial intelligence to reduce, manage, and repurpose waste across industries with predictive insights and automation.",
+      image: "/waste.jpg",
+      features: [
+        "AI waste classification",
+        "Predictive waste analytics",
+        "Smart recycling systems",
+        "Zero-waste automation tools",
+        "Data-driven reduction strategies",
+      ],
+      cta: "Reduce Waste with AI",
+    },
+    {
+      id: "eco-reco",
+      title: "Eco-Friendly Business & Product Recos",
+      subtitle: "Driving sustainable choices with smart recommendations.",
+      description:
+        "Empower businesses and consumers to make eco-friendly decisions using recommendation engines tailored to sustainability preferences.",
+      image: "/2.png",
+      features: [
+        "Green product finders",
+        "Sustainable supply chain suggestions",
+        "Eco-business audits",
+        "Consumer impact calculators",
+        "Carbon-conscious choices",
+      ],
+      cta: "Go Eco-Friendly",
+    },
+    {
+      id: "disaster-relief",
+      title: "Disaster Preparedness & Relief",
+      subtitle: "Optimizing emergency responses with tech.",
+      description:
+        "Utilize AI and data systems to enhance disaster readiness, efficient resource distribution, and real-time relief efforts.",
+      image: "/1.png",
+      features: [
+        "Emergency planning systems",
+        "Real-time crisis mapping",
+        "Resource optimization tools",
+        "Community alert networks",
+        "Disaster impact prediction",
+      ],
+      cta: "Be Disaster Ready",
+    },
+    {
+      id: "green-travel",
+      title: "Sustainable Travel & Transport",
+      subtitle: "Innovations for greener mobility.",
+      description:
+        "Explore solutions for eco-friendly commuting, tourism, and transportation that reduce emissions and environmental impact.",
+      image: "/7.png",
+      features: [
+        "Carbon-neutral travel platforms",
+        "Green route planning",
+        "Eco mobility sharing",
+        "Sustainable tourism guides",
+        "Smart public transport systems",
+      ],
+      cta: "Travel Sustainably",
+    },
+    {
+      id: "food-waste",
+      title: "Food Waste Management",
+      subtitle: "Tackling food waste from farm to fork.",
+      description:
+        "Implement systems to track, reduce, and repurpose food waste in homes, businesses, and agriculture.",
+      image: "/3.png",
+      features: [
+        "Smart inventory tools",
+        "Surplus food donation apps",
+        "Food spoilage detection",
+        "Waste-to-energy solutions",
+        "Farm waste optimization",
+      ],
+      cta: "Manage Food Waste",
+    },
+    {
+      id: "green-building",
+      title: "Green Building & Design",
+      subtitle: "Constructing a sustainable future.",
+      description:
+        "Reimagine construction and design with eco-friendly materials, energy efficiency, and climate-conscious architecture.",
+      image: "/4.png",
+      features: [
+        "Smart energy-efficient buildings",
+        "Low-impact construction materials",
+        "Sustainable urban planning",
+        "Carbon-neutral designs",
+        "Green certification tech",
+      ],
+      cta: "Design Green Spaces",
+    },
+    {
+      id: "sustain-edu",
+      title: "Sustainability Education",
+      subtitle: "Empowering through personalized learning.",
+      description:
+        "Deliver customized sustainability education using adaptive learning technologies and gamified platforms.",
+      image: "/5.png",
+      features: [
+        "Interactive learning modules",
+        "Personalized eco-learning paths",
+        "Gamified sustainability challenges",
+        "Community-based education",
+        "Green skill certifications",
+      ],
+      cta: "Educate for Change",
+    },
+    {
+      id: "sustain-finance",
+      title: "Sustainable Finance Tools",
+      subtitle: "Investing in a better planet.",
+      description:
+        "Build tools that guide responsible investments, track ESG impact, and promote green financial literacy.",
+      image: "/6.png",
+      features: [
+        "ESG investment trackers",
+        "Green bonds analytics",
+        "Impact investing platforms",
+        "Sustainable budgeting apps",
+        "Carbon offset investment tools",
+      ],
+      cta: "Finance Sustainability",
+    },
+    {
+      id: "mental-health",
+      title: "Mental Health & Well-being",
+      subtitle: "Supporting holistic well-being.",
+      description:
+        "Develop technologies that promote mental wellness, early intervention, and community mental health support.",
+      image: "/8.png",
+      features: [
+        "AI mental health assistants",
+        "Mood tracking tools",
+        "Wellness chatbots",
+        "Community support platforms",
+        "Mindfulness and therapy apps",
+      ],
+      cta: "Support Well-being",
+    },
+    {
+      id: "wildcard",
+      title: "Others - Your Domain",
+      subtitle: "Innovate without limits.",
+      description:
+        "Have an impactful idea outside these domains? This is your space to create your own path and build for the future.",
+      image: "/9.png",
+      features: [
+        "Your passion project",
+        "Interdisciplinary innovation",
+        "Emerging solutions",
+        "Experimental tech",
+        "Out-of-the-box ideas",
+      ],
+      cta: "Build Your Idea",
+    },
+  ]
+  
