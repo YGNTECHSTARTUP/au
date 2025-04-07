@@ -46,10 +46,13 @@ export function Navbar() {
           </div>
 
           {/* Get Tickets Button */}
+          <Link href="/form">
           <div className="hidden md:block">
             <Button className="bg-white text-black hover:bg-gray-200">GET TICKETS</Button>
           </div>
 
+          </Link>
+     
           {/* Mobile menu button */}
           <div className="md:hidden">
             <button
@@ -76,7 +79,9 @@ export function Navbar() {
                 {item.name}
               </Link>
             ))}
-            <Button className="w-full mt-4 bg-white text-black hover:bg-gray-200">GET TICKETS</Button>
+            <Link href="/forms"  >
+            <Button className="w-full mt-4 bg-white text-black hover:bg-gray-200" >GET TICKETS</Button>
+            </Link>
           </div>
         </div>
       )}

@@ -11,6 +11,7 @@ const page = () => {
    
         <Home/>
         <StatsSection/>
+        
         <SponsorsSection/>
         <Tracks/>
     </div>

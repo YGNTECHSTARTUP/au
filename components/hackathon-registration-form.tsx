@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client"
 
 import { useState } from "react"
@@ -72,7 +74,7 @@ export default function HackathonRegistrationForm() {
   const { watch } = form
   const teamSize = watch("teamSize")
 
-  const onSubmit = (data) => {
+  const onSubmit = (data:any) => {
     const parsed = fullSchema.safeParse(data)
     if (!parsed.success) {
       console.log("Validation result:", parsed.success)
@@ -159,10 +161,8 @@ export default function HackathonRegistrationForm() {
 
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="max-w-3xl mx-auto space-y-8">
-          {step === 1 && <PersonalInfoForm form={form} />}
-          {step === 2 && <TeamInfoForm form={form} teamSize={teamSize} />}
-
-          {step === 3 && (
+        {step === 1 && <PersonalInfoForm form={form as any} />}
+        {step === 2 && <TeamInfoForm form={form as any} teamSize={teamSize as string} />} {step === 3 && (
             <div className="space-y-6">
               <FormField
                 control={form.control}

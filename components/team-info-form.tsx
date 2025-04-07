@@ -15,6 +15,7 @@ interface TeamInfoFormProps {
   teamSize: string
 }
 
+
 export function TeamInfoForm({ form, teamSize }: TeamInfoFormProps) {
   const numTeamMembers = Number.parseInt(teamSize)
 
