@@ -14,7 +14,7 @@ export function Navbar() {
     { name: "OPERATIONS", href: "#" },       // Instead of TIMELINE
     { name: "BOUNTIES", href: "#" },         // Instead of PRIZES
     { name: "SPONSORS", href: "#sponsors" },        // Instead of SPONSORS
-    { name: "FAQS", href: "#" },            // Instead of FAQS
+    { name: "FAQS", href: "#faq" },            // Instead of FAQS
   ]
   
 
