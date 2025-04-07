@@ -12,7 +12,7 @@ export default function Home() {
     <div className="relative  min-h-screen overflow-hidden bg-gradient-to-b from-black to-purple-950 text-white">
       {/* Stars Background */}
       <div className="absolute inset-0 z-0">
-        <div className="stars-container">
+        {/* <div className="stars-container">
           {Array.from({ length: 100 }).map((_, i) => (
             <div
               key={i}
@@ -29,7 +29,7 @@ export default function Home() {
               }}
             />
           ))}
-        </div>
+        </div> */}
       </div>
 
       <Navbar />

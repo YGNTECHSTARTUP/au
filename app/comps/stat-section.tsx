@@ -92,27 +92,10 @@ function useIntersectionObserver(ref: React.RefObject<HTMLElement | null>) {
 
 export function StatsSection() {
   return (
-    <section className="relative py-1    min-h-screen overflow-hidden bg-gradient-to-t from-black to-purple-950 text-white">
+    <section className="relative py-1    min-h-screen overflow-hidden bg-gradient-to-t from-purple-900 to-purple-950 text-white">
       {/* Animated background */}
       <div className="absolute inset-0 z-0">
-        <div className="stars-container">
-          {Array.from({ length: 100 }).map((_, i) => (
-            <div
-              key={i}
-              className="star"
-              style={{
-                top: `${Math.random() * 100}%`,
-                left: `${Math.random() * 100}%`,
-                width: `${Math.random() * 3 + 1}px`,
-                height: `${Math.random() * 3 + 1}px`,
-                animationDelay: `${Math.random() * 10}s`,
-                backgroundColor: ["#fff", "#ffff00", "#00ffff", "#ff00ff", "#ff0000", "#00ff00"][
-                  Math.floor(Math.random() * 6)
-                ],
-              }}
-            />
-          ))}
-        </div>
+     
       </div>
 
       <div className="container mx-auto px-4">

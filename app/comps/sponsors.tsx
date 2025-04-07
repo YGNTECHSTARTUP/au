@@ -5,12 +5,12 @@ import Link from "next/link"
 
 export default function SponsorsSection() {
   return (
-    <div className="relative w-full bg-black text-white py-16 px-4 md:px-8 overflow-hidden">
+    <div className="relative w- -mt-16 bg-black text-white py-16 px-4 md:px-8 overflow-hidden bg-gradient-to-b from-purple-900 to-purple-800">
       {/* Stars background */}
-      <StarBackground />
+      {/* <StarBackground /> */}
 
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-4xl md:text-5xl font-bold text-center mb-6">Our Sponsors</h1>
+        <h1 className="text-4xl md:text-5xl font-bold text-center mb-6 -mt-16">Our Sponsors</h1>
 
         <p className="text-center max-w-4xl mx-auto mb-4 text-sm md:text-base">
           Our mission wouldn&apos;t be possible without the support of our amazing sponsors! They&apos;re the true
@@ -32,10 +32,10 @@ export default function SponsorsSection() {
           <div>
             <h2 className="text-xl font-bold mb-4">GOLD SPONSORS (ENGINEER TIER)</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-              <SponsorCard imageUrl="/placeholder.svg?height=100&width=200" alt="Young Indians" />
-              <SponsorCard imageUrl="/placeholder.svg?height=100&width=200" alt="Bharat Rising" />
-              <SponsorCard imageUrl="/placeholder.svg?height=100&width=200" alt="CII" />
-              <SponsorCard imageUrl="/placeholder.svg?height=100&width=200" alt="Server X" />
+              <SponsorCard imageUrl="/placeholder.svg?height=100&width=200" alt="Sponsor" text="SPONSORS" />
+              <SponsorCard imageUrl="/placeholder.svg?height=100&width=200" alt="Sponsor" text="SPONSORS" />
+              <SponsorCard imageUrl="/placeholder.svg?height=100&width=200" alt="Sponsor" text="SPONSORS" />
+              <SponsorCard imageUrl="/placeholder.svg?height=100&width=200" alt="Sponsor" text="SPONSORS" />
               <SponsorCard imageUrl="/placeholder.svg?height=100&width=200" alt="Sponsor" text="SPONSORS" />
               <SponsorCard imageUrl="/placeholder.svg?height=100&width=200" alt="Sponsor" text="SPONSORS" />
             </div>
@@ -45,7 +45,7 @@ export default function SponsorsSection() {
           <div>
             <h2 className="text-xl font-bold mb-4">SILVER SPONSORS (CREWMATE TIER)</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-              <SponsorCard imageUrl="/placeholder.svg?height=100&width=200" alt=".xyz" />
+              <SponsorCard imageUrl="/placeholder.svg?height=100&width=200" alt="Sponsor" text="SPONSORS" />
               <SponsorCard imageUrl="/placeholder.svg?height=100&width=200" alt="Sponsor" text="SPONSORS" />
               <SponsorCard imageUrl="/placeholder.svg?height=100&width=200" alt="Sponsor" text="SPONSORS" />
               <SponsorCard imageUrl="/placeholder.svg?height=100&width=200" alt="Sponsor" text="SPONSORS" />
@@ -57,12 +57,13 @@ export default function SponsorsSection() {
           <div>
             <h2 className="text-xl font-bold mb-4">PARTNERS</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-              <SponsorCard imageUrl="/placeholder.svg?height=100&width=200" alt="Vignan's" />
-              <SponsorCard imageUrl="/placeholder.svg?height=100&width=200" alt="Partner" />
-              <SponsorCard imageUrl="/placeholder.svg?height=100&width=200" alt="GDGC VIIT" />
-              <SponsorCard imageUrl="/placeholder.svg?height=100&width=200" alt="GFG VIIT" />
-              <SponsorCard imageUrl="/placeholder.svg?height=100&width=200" alt="ACM VIIT" />
-              <SponsorCard imageUrl="/placeholder.svg?height=100&width=200" alt="YUVA VIIT" />
+            <SponsorCard imageUrl="/a-hub.jpeg" alt="A-Hub" />
+<SponsorCard imageUrl="/aicte.jpeg" alt="AICTE" />
+<SponsorCard imageUrl="/alcove.png" alt="Alcove" />
+<SponsorCard imageUrl="/au logo.png" alt="AU Logo" />
+<SponsorCard imageUrl="/au united.png" alt="AU United" />
+<SponsorCard imageUrl="/brainovision.png" alt="Brainovision" />
+<SponsorCard imageUrl="/The Digifac.webp" alt="The Digifac" />
             </div>
           </div>
         </div>
@@ -82,26 +83,6 @@ function SponsorCard({ imageUrl, alt, text }: { imageUrl: string; alt: string; t
         </div>
       )}
     </Card>
-  )
-}
-
-function StarBackground() {
-  return (
-    <div className="absolute inset-0 overflow-hidden pointer-events-none">
-      {Array.from({ length: 100 }).map((_, i) => (
-        <div
-          key={i}
-          className="absolute rounded-full bg-white"
-          style={{
-            top: `${Math.random() * 100}%`,
-            left: `${Math.random() * 100}%`,
-            width: `${Math.random() * 3}px`,
-            height: `${Math.random() * 3}px`,
-            opacity: Math.random() * 0.7 + 0.3,
-          }}
-        />
-      ))}
-    </div>
   )
 }
 

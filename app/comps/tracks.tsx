@@ -4,8 +4,6 @@ import { useState } from "react"
 import { TrackList } from "./track-list"
 import { TrackDetail } from "./track-details"
 import { Navigation } from "./navigation"
-// import { Navigation } from "@/components/navigation"
-// import { trackData } from "@/data/tracks"
 import { trackData } from "../data/track"
 
 export function Tracks() {
@@ -21,9 +19,10 @@ export function Tracks() {
   }
 
   return (
-    <div className="bg-gray-900/80 backdrop-blur-sm rounded-xl border border-gray-800 overflow-hidden shadow-2xl">
+    <div className="bg-gradient-to-br from-purple-900 via-purple-800 to-purple-900/90 min-w-full backdrop-blur-sm border border-purple-700 shadow-2xl overflow-hidden p-6 space-y-6">
       <Navigation onPrev={handlePrevTrack} onNext={handleNextTrack} />
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
+      
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
         <div className="md:col-span-1">
           <TrackList
             tracks={trackData}
@@ -41,4 +40,3 @@ export function Tracks() {
     </div>
   )
 }
-
