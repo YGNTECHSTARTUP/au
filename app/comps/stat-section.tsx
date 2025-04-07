@@ -92,7 +92,7 @@ function useIntersectionObserver(ref: React.RefObject<HTMLElement | null>) {
 
 export function StatsSection() {
   return (
-    <section className="relative py-1   min-h-screen overflow-hidden bg-gradient-to-t from-black to-purple-950 text-white">
+    <section className="relative py-1    min-h-screen overflow-hidden bg-gradient-to-t from-black to-purple-950 text-white">
       {/* Animated background */}
       <div className="absolute inset-0 z-0">
         <div className="stars-container">
