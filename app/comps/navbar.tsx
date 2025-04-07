@@ -8,18 +8,19 @@ import { Menu, X } from "lucide-react"
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const navItems = [
-    { name: "COMMAND CENTER", href: "#" },   // Instead of LOBBY
-    { name: "MISSION", href: "#" },          // Instead of ABOUT
-    { name: "THEMES", href: "#" },           // Instead of TRACKS
+    { name: "HOME", href: "#home" },   // Instead of LOBBY
+    { name: "ABOUT", href: "#stats" },          // Instead of ABOUT
+    { name: "THEMES", href: "#themes" },           // Instead of TRACKS
     { name: "OPERATIONS", href: "#" },       // Instead of TIMELINE
     { name: "BOUNTIES", href: "#" },         // Instead of PRIZES
-    { name: "SPONSORS", href: "#" },        // Instead of SPONSORS
+    { name: "SPONSORS", href: "#sponsors" },        // Instead of SPONSORS
     { name: "FAQS", href: "#" },            // Instead of FAQS
   ]
   
 
   return (
-    <nav className="relative z-50 bg-black backdrop-blur-md border-b border-purple-900/50">
+    <nav className="sticky top-0 z-50 bg-black backdrop-blur-lg border-b border-purple-900/50 shadow-md">
+
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo/Brand */}
@@ -48,7 +49,7 @@ export function Navbar() {
           {/* Get Tickets Button */}
           <Link href="/form">
           <div className="hidden md:block">
-            <Button className="bg-white text-black hover:bg-gray-200">GET TICKETS</Button>
+            <Button className="bg-white cursor-pointer text-black hover:bg-gray-200">GET TICKETS</Button>
           </div>
 
           </Link>

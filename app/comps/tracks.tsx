@@ -19,7 +19,7 @@ export function Tracks() {
   }
 
   return (
-    <div className="bg-gradient-to-br from-purple-900 via-purple-800 to-purple-900/90 min-w-full backdrop-blur-sm border border-purple-700 shadow-2xl overflow-hidden p-6 space-y-6">
+    <div id="themes" className="bg-gradient-to-br from-purple-900 via-purple-800 to-purple-900/90 min-w-full backdrop-blur-sm border border-purple-700 shadow-2xl overflow-hidden p-6 space-y-6">
       <Navigation onPrev={handlePrevTrack} onNext={handleNextTrack} />
       
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">

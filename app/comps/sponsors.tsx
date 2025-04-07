@@ -5,7 +5,7 @@ import Link from "next/link"
 
 export default function SponsorsSection() {
   return (
-    <div className="relative lg:-mt-16 bg-black text-white py-16 px-4 md:px-8 overflow-hidden bg-gradient-to-b from-purple-900 to-purple-800">
+    <div id="sponsors" className="relative lg:-mt-16 bg-black text-white py-16 px-4 md:px-8 overflow-hidden bg-gradient-to-b from-purple-900 to-purple-800">
       {/* Stars background */}
       {/* <StarBackground /> */}
 

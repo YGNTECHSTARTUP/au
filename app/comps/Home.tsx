@@ -9,7 +9,7 @@ import Spline from "@splinetool/react-spline"
 
 export default function Home() {
   return (
-    <div className="relative  min-h-screen overflow-hidden bg-gradient-to-b from-black to-purple-950 text-white">
+    <div id="home" className="relative  min-h-screen overflow-hidden bg-gradient-to-b from-black to-purple-950 text-white">
       {/* Stars Background */}
       <div className="absolute inset-0 z-0">
         {/* <div className="stars-container">
