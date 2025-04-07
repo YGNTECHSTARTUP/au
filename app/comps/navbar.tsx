@@ -79,7 +79,7 @@ export function Navbar() {
                 {item.name}
               </Link>
             ))}
-            <Link href="/forms"  >
+            <Link href="/form"  >
             <Button className="w-full mt-4 bg-white text-black hover:bg-gray-200" >GET TICKETS</Button>
             </Link>
           </div>
