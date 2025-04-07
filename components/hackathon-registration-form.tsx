@@ -45,7 +45,9 @@ const step3Schema = z.object({
 })
 
 const fullSchema = step1Schema.merge(step2Schema).merge(step3Schema)
-
+// type FormData = z.infer<typeof fullSchema>
+// export type Step1FormData = z.infer<typeof step1Schema>
+// export type Step2FormData = z.infer<typeof step2Schema>
 export default function HackathonRegistrationForm() {
   const [step, setStep] = useState(1)
   const [formPartiallyFilled, setFormPartiallyFilled] = useState(true)

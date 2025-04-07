@@ -19,7 +19,7 @@ export function Navbar() {
   
 
   return (
-    <nav className="relative z-50 bg-black/50 backdrop-blur-md border-b border-purple-900/50">
+    <nav className="relative z-50 bg-black backdrop-blur-md border-b border-purple-900/50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo/Brand */}

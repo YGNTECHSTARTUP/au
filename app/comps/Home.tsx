@@ -1,6 +1,6 @@
 // import Image from "next/image"
 // import { CountdownTimer } from "./comps/countdown-timer"
-import { Navbar } from "./navbar"
+// import { Navbar } from "./navbar"
 // import { Button } from "@/components/ui/button"
 // import { Sparkles } from "lucide-react"
 import { AnnouncementBanner } from "./announcement"
@@ -32,7 +32,7 @@ export default function Home() {
         </div> */}
       </div>
 
-      <Navbar />
+
       <AnnouncementBanner />
 
       <main className="relative z-10">
