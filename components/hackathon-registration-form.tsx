@@ -11,7 +11,7 @@ import { ArrowLeft, ArrowRight, Calendar, Clock, DollarSign, Trophy, Users, Wifi
 import { Button } from "@/components/ui/button"
 import { Form, FormField, FormItem, FormLabel, FormControl, FormMessage } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
-import { Alert, AlertDescription } from "@/components/ui/alert"
+// import { Alert, AlertDescription } from "@/components/ui/alert"
 import { PersonalInfoForm } from "./personal-info-form"
 import { TeamInfoForm } from "./team-info-form"
 
@@ -20,7 +20,7 @@ const step1Schema = z.object({
   email: z.string().email({ message: "Please enter a valid email address." }),
   college: z.string().min(2, { message: "College/Organization name is required." }),
   branch: z.string().min(2, { message: "Year & Branch/Role is required." }),
-  teamSize: z.enum(["1", "2", "3", "4"], {
+  teamSize: z.enum(["1", "2", "3", "4","5"], {
     required_error: "Please select a team size.",
   }),
 })
@@ -50,7 +50,7 @@ const fullSchema = step1Schema.merge(step2Schema).merge(step3Schema)
 // export type Step2FormData = z.infer<typeof step2Schema>
 export default function HackathonRegistrationForm() {
   const [step, setStep] = useState(1)
-  const [formPartiallyFilled, setFormPartiallyFilled] = useState(true)
+  // const [formPartiallyFilled, setFormPartiallyFilled] = useState(true)
 
   const form = useForm({
     resolver: zodResolver(fullSchema),
@@ -59,7 +59,7 @@ export default function HackathonRegistrationForm() {
       email: "",
       college: "",
       branch: "",
-      teamSize: "4",
+      teamSize: "5",
       teamName: "",
       teamLeadFullName: "",
       teamLeadEmail: "",
@@ -105,13 +105,13 @@ export default function HackathonRegistrationForm() {
     }
   }
 
-  const startOver = () => {
-    form.reset()
-    setFormPartiallyFilled(false)
-    setStep(1)
-  }
+  // const startOver = () => {
+  //   form.reset()
+  //   setFormPartiallyFilled(false)
+  //   setStep(1)
+  // }
 
-  const continueForm = () => setFormPartiallyFilled(false)
+  // const continueForm = () => setFormPartiallyFilled(false)
 
   return (
     <div className="container mx-auto px-4 py-8 text-white">
@@ -137,27 +137,13 @@ export default function HackathonRegistrationForm() {
         ))}
       </div>
 
-      {formPartiallyFilled && (
-        <Alert className="bg-blue-50 text-blue-800 mb-8">
-          <AlertDescription className="flex justify-between items-center">
-            <span>You partially filled this form 114 minutes ago</span>
-            <div className="space-x-2">
-              <Button variant="link" className="text-blue-600" onClick={continueForm}>
-                Continue
-              </Button>
-              <Button variant="link" className="text-blue-600" onClick={startOver}>
-                Start over
-              </Button>
-            </div>
-          </AlertDescription>
-        </Alert>
-      )}
+
 
       <h1 className="text-2xl md:text-3xl font-bold text-white text-center mb-10">
         {step === 1
-          ? "SUSHACKS 2025 | 24HR VIRTUAL HACKATHON"
+          ? "BUILD BHARAT THROUGH AI 2025 | 24HR HACKATHON"
           : step === 2
-          ? "FOUR MEMBERS TEAM"
+          ? "3-5 MEMBERS TEAM"
           : "PAYMENT CONFIRMATION"}
       </h1>
 

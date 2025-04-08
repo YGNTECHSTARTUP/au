@@ -11,6 +11,7 @@ interface TeamInfoFormProps {
     member2FullName?: string
     member3FullName?: string
     member4FullName?: string
+    member5FullName?: string
   }>
   teamSize: string
 }
