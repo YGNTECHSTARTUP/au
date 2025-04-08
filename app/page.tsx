@@ -5,9 +5,6 @@ import SponsorsSection from './comps/sponsors'
 import { Tracks } from './comps/tracks'
 import FAQPage from './comps/faq'
 // import { PrizeCard } from './comps/prize-card'
-import { PrizesSection } from './comps/prize-section'
-import AwardsGrid from './comps/awards-grid'
-// import AbstractPainting from './comps/halftone-waves'
 
 const page = () => {
   return (
@@ -20,8 +17,7 @@ const page = () => {
         <Tracks/>
         <FAQPage/>
         
-        <PrizesSection/>
-        <AwardsGrid/>
+    
         
     </div>
   )

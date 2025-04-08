@@ -1,6 +1,7 @@
 // Update import to use default import
-import AwardCard from "./award-card"
+// import AwardCard from "./award-card"
 
+import AwardCard from "./award-card"
 
 export default function AwardsGrid() {
   const awards = [
