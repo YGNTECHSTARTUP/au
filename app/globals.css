@@ -2,7 +2,16 @@
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
-
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.glass-card {
+  @apply bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 shadow-xl;
+}
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
