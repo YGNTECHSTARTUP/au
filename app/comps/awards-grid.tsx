@@ -12,7 +12,7 @@ export default function AwardsGrid() {
         "The First Runner-Up will take home [TBA] in cash, as well as a certificate of excellence. Prepare to showcase your best work to secure this incredible achievement!",
       prize: "[TBA] CASH PRIZE",
       certificate: true,
-      className: "border-cyan-400",
+      className: "border-cyan-400 bg-black text-white",
       titleClassName: "text-cyan-400",
       numberClassName: "bg-cyan-400 text-black",
     },
@@ -23,7 +23,7 @@ export default function AwardsGrid() {
         "The Second Runner-Up will receive [TBA] in cash, along with a certificate. Give your best effort to secure this high placement!",
       prize: "[TBA] CASH PRIZE",
       certificate: true,
-      className: "border-green-400",
+      className: "border-green-400 bg-black text-white",
       titleClassName: "text-green-400",
       numberClassName: "bg-green-400 text-black",
     },
@@ -34,7 +34,7 @@ export default function AwardsGrid() {
         "This award will be given to the team that tells the most compelling, creative, and impactful story about their project. The winner will receive a certificate!",
       prize: "[TBA] PRIZE",
       certificate: true,
-      className: "border-yellow-300",
+      className: "border-yellow-300 bg-black text-white",
       titleClassName: "text-yellow-300",
       numberClassName: "bg-yellow-300 text-black",
     },
@@ -45,7 +45,7 @@ export default function AwardsGrid() {
         "The Crowd Favorite is voted by participants and audience alike. This team will win a certificate, and the pride of winning the people's choice award!",
       prize: "[TBA] PRIZE",
       certificate: true,
-      className: "border-blue-500",
+      className: "border-blue-500 bg-black text-white",
       titleClassName: "text-blue-500",
       numberClassName: "bg-blue-500 text-white",
     },
@@ -53,6 +53,9 @@ export default function AwardsGrid() {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-7xl mx-auto p-4">
+        <div className="absolute inset-0 z-0">
+        {/* <StarBackground /> */}
+      </div>
       {awards.map((award) => (
         <AwardCard
           key={award.number}

@@ -12,7 +12,7 @@ export const DaySelector: React.FC<DaySelectorProps> = ({ activeDay, onDayChange
     <div className="flex justify-center gap-4 mb-8">
       <button
         onClick={() => onDayChange(1)}
-        className={`px-6 py-2 rounded-md font-bold transition-colors ${
+        className={`px-6 py-2 rounded-md font-bold transition-colors cursor-pointer ${
           activeDay === 1 ? "bg-orange-500 text-white" : "bg-white text-gray-800 hover:bg-gray-200"
         }`}
       >
@@ -20,7 +20,7 @@ export const DaySelector: React.FC<DaySelectorProps> = ({ activeDay, onDayChange
       </button>
       <button
         onClick={() => onDayChange(2)}
-        className={`px-6 py-2 rounded-md font-bold transition-colors ${
+        className={`px-6 py-2 rounded-md font-bold transition-colors cursor-pointer ${
           activeDay === 2 ? "bg-orange-500 text-white" : "bg-white text-gray-800 hover:bg-gray-200"
         }`}
       >

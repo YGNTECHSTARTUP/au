@@ -1,4 +1,5 @@
 
+import AwardsGrid from "./awards-grid"
 import { PrizeCard } from "./prize-card"
 import { SectionHeader } from "./section-header"
 
@@ -29,6 +30,7 @@ export function PrizesSection() {
 
           {/* You can add more prize cards here */}
         </div>
+        <AwardsGrid/>
       </div>
     </section>
   )

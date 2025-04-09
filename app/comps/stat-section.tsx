@@ -133,7 +133,7 @@ export function StatsSection() {
             <StatItem value={500} label="ATTENDEES" color="text-red-500" suffix="+" />
             <StatItem value={10} label="MENTORS" color="text-green-500" suffix="+" />
             <StatItem value={2} label="DAYS" color="text-blue-500" prefix="0" />
-            <StatItem value={12} label="TRACKS" color="text-purple-500" />
+            <StatItem value={9} label="THEMES" color="text-purple-500" />
           </div>
         </div>
       </div>

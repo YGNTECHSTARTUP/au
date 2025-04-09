@@ -12,7 +12,7 @@ export function Navbar() {
     { name: "ABOUT", href: "/#stats" },          // Instead of ABOUT
     { name: "THEMES", href: "/#themes" },           // Instead of TRACKS
     { name: "OPERATIONS", href: "timeline" },       // Instead of TIMELINE
-    { name: "BOUNTIES", href: "/" },         // Instead of PRIZES
+    { name: "BOUNTIES", href: "/prizes" },         // Instead of PRIZES
     { name: "SPONSORS", href: "/#sponsors" },        // Instead of SPONSORS
     { name: "FAQS", href: "/#faq" },            // Instead of FAQS
   ]
