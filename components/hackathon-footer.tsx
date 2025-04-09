@@ -77,48 +77,53 @@ export default function HackathonFooter() {
 
         {/* Grid Content */}
         <div className="grid grid-cols-1 gap-10 border-t border-gray-800 pt-10 md:grid-cols-2 lg:grid-cols-4">
-          {/* Navigation */}
-          <FooterSection title="NAVIGATION">
-            <LinkList links={navLinks} />
-          </FooterSection>
+  {/* Navigation */}
+  <FooterSection title="NAVIGATION">
+    <LinkList links={navLinks} />
+  </FooterSection>
 
-          {/* Social */}
-          <FooterSection title="CONNECT">
-            <LinkList links={socialLinks} />
-            <p className="mt-4 text-sm">buildbhartthroughai@gmail.com</p>
-            <div className="mt-2 flex items-center gap-2">
-              <div className="relative h-10 w-10">
-                <Image src="/au-logo.png" alt="Institute Logo" fill className="object-contain" />
-              </div>
-              <div className="text-xs">
-                <p>Andhra University</p>
-                <p>Visakhapatnam, AP - 530049</p>
-              </div>
-            </div>
-          </FooterSection>
+  {/* Social */}
+  <FooterSection title="CONNECT">
+    <LinkList links={socialLinks} />
+    <p className="mt-4 text-sm break-all">buildbharatthroughai@gmail.com</p>
 
-          {/* Website Team */}
-          <FooterSection title="ORGANIZERS">
-          <AvatarGroup members={sushacksTeam} prefix="sushacks" />
-        
-          </FooterSection>
+    <div className="mt-4 flex items-start gap-3">
+      <div className="relative h-10 w-10 shrink-0">
+        <Image src="/au-logo.png" alt="Institute Logo" fill className="object-contain" />
+      </div>
+      <div className="text-xs leading-tight">
+        <p>Andhra University</p>
+        <p>Visakhapatnam, AP - 530003</p>
+      </div>
+    </div>
+  </FooterSection>
 
-          {/* SusHacks Team & Partners */}
-          <FooterSection title="OUR PARTNERS">
-          <div className="mb-4">
-              <p className="text-sm font-medium mb-2">Student Co-ordinators</p>
-              <AvatarGroup members={websiteTeam} prefix="website" />
-            </div>
-            <div className="mb-4">
-              <p className="text-sm font-medium mb-2">Website Team</p>
-              <AvatarGroup members={websiteTeam} prefix="website" />
-            </div>
-            <div>
-              <p className="text-sm font-medium mb-2">Community Partners</p>
-              <ImageGrid items={communityPartners} />
-            </div>
-          </FooterSection>
-        </div>
+  {/* Website Team */}
+  <FooterSection title="ORGANIZERS">
+    <AvatarGroup members={sushacksTeam} prefix="sushacks" />
+  </FooterSection>
+
+  {/* Our Partners */}
+  <FooterSection title="OUR PARTNERS">
+    <div className="mb-6">
+      <p className="text-sm font-medium mb-2">Student Co-ordinators</p>
+      <AvatarGroup members={websiteTeam} prefix="website" />
+    </div>
+    <div className="mb-6">
+      <p className="text-sm font-medium mb-2">Website Team</p>
+      <AvatarGroup members={websiteTeam} prefix="website" />
+    </div>
+    <div className="mb-4">
+      <p className="text-sm font-medium mb-2">Community Partners</p>
+      <ImageGrid items={communityPartners} />
+    </div>
+    <div className="text-sm leading-relaxed space-y-1 mt-4">
+      <p>- M. Ashish – 📞 +91 73826 12478</p>
+      <p>- P. Dharani – 📞 +91 77024 86098</p>
+    </div>
+  </FooterSection>
+</div>
+
 
         {/* Footer Bottom */}
         <p className="text-center mt-12 text-xs text-gray-500">
