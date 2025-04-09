@@ -3,6 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import { PublicTeamMember } from "../types/team"
+
 import {
   Card,
   CardContent,
@@ -51,38 +52,38 @@ export function TeamsTab({ participants, teamCodes }: TeamsTabProps) {
 
     return (
       <Link href={`/teams/${teamSlug}`} key={teamName}>
-        <Card className="h-full hover:shadow-md hover:bg-muted/60 transition duration-200 ease-in-out border border-muted cursor-pointer rounded-2xl">
+        <Card className="h-full border border-muted  transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-[1.01] hover:bg-muted/50 cursor-pointer rounded-2xl">
           <CardHeader className="pb-2">
             <div className="flex justify-between items-start">
-              <CardTitle className="text-lg font-bold tracking-tight">
+              <CardTitle className="text-lg font-semibold tracking-tight text-foreground">
                 {teamName}
               </CardTitle>
-              <Badge variant="secondary" className="font-mono text-xs px-2 py-0.5">
+              <Badge variant="outline" className="text-xs px-2 py-0.5 border border-primary bg-primary/10 text-primary font-mono rounded-md">
                 {teamCode}
               </Badge>
             </div>
           </CardHeader>
           <CardContent>
-            <div className="space-y-4 text-sm text-muted-foreground">
+            <div className="space-y-4 text-sm  text-black">
               <div className="flex items-center gap-2">
-                <Briefcase className="h-4 w-4" />
+                <Briefcase className="h-4 w-4 text-primary" />
                 <span>{theme}</span>
               </div>
 
               <div className="flex items-center gap-2">
-                <School className="h-4 w-4" />
+                <School className="h-4 w-4 text-secondary-foreground" />
                 <span className="truncate">{college}</span>
               </div>
 
               <div className="flex items-center gap-2">
-                <Users className="h-4 w-4" />
+                <Users className="h-4 w-4 text-accent-foreground" />
                 <div className="flex -space-x-2">
                   {members.slice(0, 4).map((member, i) => (
                     <Avatar
                       key={i}
-                      className="h-6 w-6 border-2 border-background shadow-sm"
+                      className="h-7 w-7 border-2 border-background shadow-md"
                     >
-                      <AvatarFallback className="text-xs bg-muted text-foreground">
+                      <AvatarFallback className="text-[10px] font-medium bg-muted text-foreground">
                         {member.Name?.split(" ")
                           .map((n) => n[0])
                           .join("")
@@ -91,8 +92,8 @@ export function TeamsTab({ participants, teamCodes }: TeamsTabProps) {
                     </Avatar>
                   ))}
                   {members.length > 4 && (
-                    <Avatar className="h-6 w-6 border-2 border-background bg-muted">
-                      <AvatarFallback className="text-xs">
+                    <Avatar className="h-7 w-7 border-2 border-background bg-muted text-muted-foreground">
+                      <AvatarFallback className="text-xs font-medium">
                         +{members.length - 4}
                       </AvatarFallback>
                     </Avatar>
@@ -111,14 +112,21 @@ export function TeamsTab({ participants, teamCodes }: TeamsTabProps) {
       defaultValue="all"
       value={activeTab}
       onValueChange={setActiveTab}
-      className="space-y-4"
+      className="space-y-6"
     >
-      <TabsList className="flex gap-2 overflow-x-auto p-1 rounded-xl border bg-muted/40 w-full scrollbar-thin">
-        <TabsTrigger value="all" className="whitespace-nowrap">
+      <TabsList className="flex gap-2 overflow-x-auto p-2 rounded-xl border bg-muted/40 w-full scrollbar-thin">
+        <TabsTrigger
+          value="all"
+          className="whitespace-nowrap text-sm font-medium rounded-lg px-4 py-1.5 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground transition"
+        >
           All Teams
         </TabsTrigger>
         {uniqueThemes.map((theme) => (
-          <TabsTrigger key={theme} value={theme} className="whitespace-nowrap">
+          <TabsTrigger
+            key={theme}
+            value={theme}
+            className="whitespace-nowrap text-sm font-medium rounded-lg px-4 py-1.5 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground transition"
+          >
             {theme}
           </TabsTrigger>
         ))}
@@ -137,9 +145,7 @@ export function TeamsTab({ participants, teamCodes }: TeamsTabProps) {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {Object.entries(teamGroups)
               .filter(([, members]) => members[0]?.Themes === theme)
-              .map(([teamName, members]) =>
-                renderTeamCard(teamName, members)
-              )}
+              .map(([teamName, members]) => renderTeamCard(teamName, members))}
           </div>
         </TabsContent>
       ))}
