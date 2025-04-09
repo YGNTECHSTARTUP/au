@@ -58,13 +58,22 @@ export default function HackathonFooter() {
   const navLinks = [
     { name: "HOME", href: "/#home" },        // Replaces "LOBBY"
     { name: "ABOUT", href: "/#stats" },      // Assuming you want to keep TEAMS
-    { name: "OPERATIONS", href: "/timeline" }, // Replaces "TIMELINE"
+    { name: "OPERATIONS", href: "/timeline" },
+    {name:"TEAMS",href:"/team"}, // Replaces "TIMELINE"
     { name: "BOUNTIES", href: "/prizes" },   // Replaces "PRIZES"  // Assuming you want to keep GALLERY
     { name: "ABOUT", href: "/#stats" },      // Replaces "ABOUT"
     { name: "FAQS", href: "/#faq" }          // Replaces "FAQS"
   ]
-   const socialLinks = ["X.COM", "DISCORD", "LINKEDIN", "INSTAGRAM"].map(name => ({ name, href: "#" }))
-
+  const socialLinks = [
+    {
+      name: "INSTAGRAM",
+      href: "https://www.instagram.com/buildbharatthrough.ai?igsh=aXBjYjVyamhxMjR4",
+    },
+    {
+      name: "LINKEDIN",
+      href: "https://www.linkedin.com/company/build-bharat-through-ai/",
+    },
+  ];
   return (
     <footer className="w-full bg-black text-white">
       <div className="container mx-auto px-4 py-12">
