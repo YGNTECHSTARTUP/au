@@ -3,8 +3,11 @@
 // import { Navbar } from "./navbar"
 // import { Button } from "@/components/ui/button"
 // import { Sparkles } from "lucide-react"
+import Link from "next/link"
 import { AnnouncementBanner } from "./announcement"
 import Spline from "@splinetool/react-spline"
+import { Button } from "@/components/ui/button"
+import { ArrowRight } from "lucide-react"
 // import { StatsSection } from "./stat-section"
 
 export default function Home() {
@@ -72,6 +75,15 @@ export default function Home() {
   <p className="text-lg text-gray-300 mb-10 flex items-center justify-center lg:justify-start gap-2">
     <span>🚀 Show your spark. Collaborate, compete, and create the future of India with AI!</span>
   </p>
+
+  <Link href="/form">
+      <Button
+        className="bg-gradient-to-r mx-auto hover:scale-105 from-yellow-400 via-orange-500 to-red-500 text-white hover:scale-105 transition-transform duration-300 shadow-lg rounded-2xl px-6 py-4 text-lg font-semibold flex items-center gap-2"
+      >
+        Register Now!
+        <ArrowRight className="w-5 h-5" />
+      </Button>
+    </Link>
 
   <div className="flex justify-center lg:justify-start">
     {/* <Button

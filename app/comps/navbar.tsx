@@ -50,7 +50,7 @@ export function Navbar() {
           {/* Get Tickets Button */}
           <Link href="/form">
           <div className="hidden md:block">
-            <Button className="bg-white cursor-pointer text-black hover:bg-gray-200">GET TICKETS</Button>
+            <Button className="bg-white cursor-pointer text-black hover:bg-gray-200 bg-gradient-to-b from-yellow-400 to-orange-500 hover:scale-105">Register Now</Button>
           </div>
 
           </Link>

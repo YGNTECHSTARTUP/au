@@ -8,7 +8,7 @@ import FAQPage from './comps/faq'
 
 const page = () => {
   return (
-    <div>
+    <div >
    
         <Home/>
         <StatsSection/>
