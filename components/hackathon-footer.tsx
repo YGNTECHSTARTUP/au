@@ -148,7 +148,7 @@ export default function HackathonFooter() {
         <p className="text-center mt-12 text-xs text-gray-500">
           © 2025 Build Bharat Through AI. All rights reserved.
           <br/>
-          Design Inspired by Buildbharat 2025💓
+          Design Inspired by SUSHACKS 2025💓
         </p>
       </div>
     </footer>
