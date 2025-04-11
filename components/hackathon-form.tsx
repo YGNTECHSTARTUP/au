@@ -167,7 +167,7 @@ export default function HackathonForm() {
   <Card className={`${glassCard} mt-8`}>
     <CardContent className="p-6">
       <div className="text-center mb-6">
-        <h2 className="text-xl font-bold">SUSHACKS 2025 | 24HR VIRTUAL HACKATHON</h2>
+        <h2 className="text-xl font-bold">Buildbharat 2025 | 24HR VIRTUAL HACKATHON</h2>
       </div>
 
       <Form {...form}>

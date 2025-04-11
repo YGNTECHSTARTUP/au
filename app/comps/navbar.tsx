@@ -14,13 +14,14 @@ export function Navbar() {
     { name: "OPERATIONS", href: "timeline" },
     { name: "TEAMS", href: "/team" },         // Instead of TIMELINE
     { name: "BOUNTIES", href: "/prizes" },         // Instead of PRIZES
-    { name: "SPONSORS", href: "/#sponsors" },        // Instead of SPONSORS
+    { name: "SPONSORS", href: "/#sponsors" },
+    {name:"FACILITIES",href:"/facilities"},        // Instead of SPONSORS
     { name: "FAQS", href: "/#faq" },            // Instead of FAQS
   ]
   
 
   return (
-    <nav className="sticky top-0 z-50 bg-black backdrop-blur-lg border-b border-purple-900/50 shadow-md">
+    <nav className="sticky top-0 z-50 bg-black backdrop-blur-lg border-b border-purple-900/50 shadow-lg">
 
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
@@ -32,7 +33,7 @@ export function Navbar() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <div className="flex items-center space-x-8">
               {navItems.map((item) => (
                 <Link
@@ -49,14 +50,14 @@ export function Navbar() {
 
           {/* Get Tickets Button */}
           <Link href="/form">
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <Button className="bg-white cursor-pointer text-black hover:bg-gray-200 bg-gradient-to-b from-yellow-400 to-orange-500 hover:scale-105">Register Now</Button>
           </div>
 
           </Link>
      
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-gray-300 hover:text-white focus:outline-none"
@@ -69,7 +70,7 @@ export function Navbar() {
 
       {/* Mobile menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-black/95 backdrop-blur-md">
+        <div className="lg:hidden bg-black/95 backdrop-blur-lg">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navItems.map((item) => (
               <Link

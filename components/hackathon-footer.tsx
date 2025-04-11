@@ -45,7 +45,7 @@ const LinkList = ({ links }: { links: { name: string; href: string }[] }) => (
 
 export default function HackathonFooter() {
   const websiteTeam = Array.from({ length: 8 }, (_, i) => ({ name: `W${i + 1}`, image: "/placeholder.svg" }))
-  const sushacksTeam = Array.from({ length: 16 }, (_, i) => ({ name: `S${i + 1}`, image: "/placeholder.svg" }))
+  const BuildbharatTeam = Array.from({ length: 16 }, (_, i) => ({ name: `S${i + 1}`, image: "/placeholder.svg" }))
   const communityPartners = [
     { name: "AICTE", logo: "/AICTE.jpeg" },
     { name: "Alcove", logo: "/alcove.png" },
@@ -109,7 +109,7 @@ export default function HackathonFooter() {
 
   {/* Website Team */}
   <FooterSection title="ORGANIZERS">
-    <AvatarGroup members={sushacksTeam} prefix="sushacks" />
+    <AvatarGroup members={BuildbharatTeam} prefix="Buildbharat" />
   </FooterSection>
 
   {/* Our Partners */}
@@ -133,12 +133,22 @@ export default function HackathonFooter() {
   </FooterSection>
 </div>
 
-
+<div className="flex flex-wrap justify-center gap-6 mt-12 text-sm text-gray-400">
+  <a href="/event-policy" className="hover:text-white transition-colors duration-200">
+    POLICY
+  </a>
+  <a href="/terms" className="hover:text-white transition-colors duration-200">
+    TERMS
+  </a>
+  <a href="/code-of-conduct" className="hover:text-white transition-colors duration-200">
+    CODE OF CONDUCT
+  </a>
+</div>
         {/* Footer Bottom */}
         <p className="text-center mt-12 text-xs text-gray-500">
           © 2025 Build Bharat Through AI. All rights reserved.
           <br/>
-          Design Inspired by SUSHACKS 2025💓
+          Design Inspired by Buildbharat 2025💓
         </p>
       </div>
     </footer>
