@@ -35,6 +35,54 @@ export default function ProblemStatements() {
     // For now, we'll use the hardcoded data with some enhancements
     const enhancedProblems: ProblemStatement[] = [
       {
+        id: "realtime-llm-quality-control",
+        title: "Real-Time Quality Control for LLM Interactions",
+        subtitle: "Catch hallucinations as they happen.",
+        description:
+          "Build a prototype to detect and adjust for known LLM errors in real-time during interactive sessions like voice assistants, minimizing hallucinations and improving reliability.",
+        features: [
+          "Real-time hallucination detection",
+          "Voice assistant interaction monitoring",
+          "Adaptive response correction",
+          "Confidence scoring per response",
+          "Modular LLM integration layer",
+        ],
+        cta: "Start Real-Time Monitoring",
+        difficulty: "hard",
+      },
+      {
+        id: "interview-normalisation-ai",
+        title: "AI/ML Normalisation for Interviews",
+        subtitle: "Fair ranking across interviewers.",
+        description:
+          "Develop a solution that processes video interviews for a specific role and normalizes results across different interviewers to provide an unbiased ranking of candidates.",
+        features: [
+          "Interviewer bias detection",
+          "Candidate ranking system",
+          "Cross-interview data normalization",
+          "Video analytics pipeline",
+          "Role-specific feedback generation",
+        ],
+        cta: "Normalize Interview Results",
+        difficulty: "hard",
+      },
+      {
+        id: "body-language-ai",
+        title: "AI & ML Body Language Analyzer",
+        subtitle: "Understand non-verbal cues from video.",
+        description:
+          "Prototype a tool that analyzes video footage to assess body language and soft skills of a speaker, offering structured insights for communication training or interview feedback.",
+        features: [
+          "Facial expression analysis",
+          "Gesture and posture detection",
+          "Soft skill scoring system",
+          "Camera-facing interaction insights",
+          "Improvement suggestions",
+        ],
+        cta: "Analyze My Body Language",
+        difficulty: "medium",
+      },      
+      {
         id: "interview-scoring",
         title: "Interview Question Relevance Scoring",
         subtitle: "Ensure fair and effective technical interviews.",
@@ -49,7 +97,7 @@ export default function ProblemStatements() {
         ],
         cta: "Score Interviews Smarter",
         difficulty: "medium",
-        isFeatured: true,
+        // isFeatured: true,
       },
       {
         id: "voice-engagement",
