@@ -180,6 +180,22 @@ export default function ProblemStatements() {
         cta: "Generate Feedback Instantly",
         // difficulty: "medium",
       },
+      {
+        id: "open-innovation",
+        title: "Open Innovation",
+        subtitle: "Solve real-world problems with bold, boundary-pushing ideas.",
+        description:
+          "Open Innovation invites you to identify pressing challenges around you — from everyday inefficiencies to global issues — and craft disruptive, tech-powered solutions. You have the freedom to innovate beyond predefined tracks and build what truly matters.",
+        features: [
+          "Define your own problem statement",
+          "Freedom to explore any domain",
+          "Innovate beyond constraints",
+          "Tackle local or global challenges",
+          "Drive real, meaningful impact",
+        ],
+        cta: "Build What Truly Matters",
+        // difficulty: "variable",
+      }
     ]
 
     setProblemData(enhancedProblems)
@@ -191,10 +207,10 @@ export default function ProblemStatements() {
       <QuoteBanner quote={randomQuote.quote} author={randomQuote.author} />
 
       <div className="mb-8">
-        <p className="text-lg text-center text-gray-600 max-w-3xl mx-auto">
-          Explore these innovative problem statements focused on enhancing interview processes through AI and machine
-          learning. Each challenge represents an opportunity to revolutionize how we conduct, analyze, and improve
-          interviews.
+        <p className="text-xl text-center text-gray-100 max-w-3xl mx-auto">
+        These aren&apos;t just problem statements — they&apos;re real-world challenges waiting for bold solutions. Whether you tackle one or bring your own, this is your chance to build with purpose, think big, and make an impact.
+
+Let’s solve what matters. Let’s build the future.
         </p>
       </div>
 
