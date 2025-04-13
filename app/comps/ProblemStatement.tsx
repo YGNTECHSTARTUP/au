@@ -48,7 +48,7 @@ export default function ProblemStatements() {
           "Modular LLM integration layer",
         ],
         cta: "Start Real-Time Monitoring",
-        difficulty: "hard",
+        // difficulty: "hard",
       },
       {
         id: "interview-normalisation-ai",
@@ -64,7 +64,7 @@ export default function ProblemStatements() {
           "Role-specific feedback generation",
         ],
         cta: "Normalize Interview Results",
-        difficulty: "hard",
+        // difficulty: "hard",
       },
       {
         id: "body-language-ai",
@@ -80,7 +80,7 @@ export default function ProblemStatements() {
           "Improvement suggestions",
         ],
         cta: "Analyze My Body Language",
-        difficulty: "medium",
+        // difficulty: "medium",
       },      
       {
         id: "interview-scoring",
@@ -96,7 +96,7 @@ export default function ProblemStatements() {
           "Quality improvement suggestions",
         ],
         cta: "Score Interviews Smarter",
-        difficulty: "medium",
+        // difficulty: "medium",
         // isFeatured: true,
       },
       {
@@ -113,7 +113,7 @@ export default function ProblemStatements() {
           "Voice-based behavioral trends",
         ],
         cta: "Track Engagement",
-        difficulty: "hard",
+        // difficulty: "hard",
       },
       {
         id: "cross-culture-analyzer",
@@ -129,7 +129,7 @@ export default function ProblemStatements() {
           "Inclusive communication enhancement",
         ],
         cta: "Analyze Culture Gaps",
-        difficulty: "medium",
+        // difficulty: "medium",
       },
       {
         id: "panel-consistency",
@@ -145,8 +145,8 @@ export default function ProblemStatements() {
           "Recommendation alignment metrics",
         ],
         cta: "Check Panel Fairness",
-        difficulty: "easy",
-        isFeatured: true,
+        // difficulty: "easy",
+        // isFeatured: true,
       },
       {
         id: "ai-lie-detector",
@@ -162,7 +162,7 @@ export default function ProblemStatements() {
           "Real-time fact validation",
         ],
         cta: "Detect Deception Smartly",
-        difficulty: "hard",
+        // difficulty: "hard",
       },
       {
         id: "interview-feedback-ai",
@@ -178,7 +178,7 @@ export default function ProblemStatements() {
           "Structured improvement tips",
         ],
         cta: "Generate Feedback Instantly",
-        difficulty: "medium",
+        // difficulty: "medium",
       },
     ]
 

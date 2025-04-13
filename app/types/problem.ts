@@ -5,7 +5,7 @@ export interface ProblemStatement {
     description: string
     features: string[]
     cta: string
-    difficulty?: "easy" | "medium" | "hard"
+    // difficulty?: "easy" | "medium" | "hard"
     isFeatured?: boolean
   }
   
