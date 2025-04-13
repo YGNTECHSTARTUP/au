@@ -61,16 +61,28 @@ export default function Home() {
   </div>
 
   <ul className="list-disc pl-5 mb-6 text-gray-200 space-y-2 text-left">
-    <li><strong>🕘 Time:</strong> 9:00 AM to 3:00 PM (Both Days)</li>
-    <li><strong>👥 Team Size:</strong> 3 to 5 Members</li>
-    <li><strong>💸 Registration Fee:</strong> ₹399 per person</li>
-    <li><strong>₹1 Lakh Prize Pool</strong> – Build bold. Win big.</li>
-    <li><strong>AU Fest Access + Free Food</strong> – Fuel your mind and vibe with the tribe.</li>
-    <li><strong>Certification & Swag</strong> – Show off your hustle.</li>
-    <li><strong>Problem Statements Revealed Early</strong> – Get a head start!</li>
-    <li><strong>Mentorship from Tech Giants</strong> – Code with the pros.</li>
-    <li><strong>National-Level Recognition</strong> – Get spotted by recruiters & incubators.</li>
-  </ul>
+  <li><strong>🕘 Time:</strong> 9:00 AM to 3:00 PM (Both Days)</li>
+  <li><strong>👥 Team Size:</strong> 3 to 5 Members</li>
+  <li><strong>💸 Registration Fee:</strong> ₹399 per person</li>
+  <li><strong>₹1 Lakh Prize Pool</strong> – Build bold. Win big.</li>
+
+  <li><strong>Certification & Swag</strong> – Show off your hustle.</li>
+  <li><strong>Problem Statements Revealed Early</strong> – Get a head start!</li>
+  <li><strong>Mentorship from Tech Giants</strong> – Code with the pros.</li>
+  <li><strong>National-Level Recognition</strong> – Get spotted by recruiters & incubators.</li>
+
+  <li><strong>🍽️ Meals Included:</strong> Lunch & dinner on April 16<sup>th</sup>, breakfast & lunch on April 17<sup>th</sup></li>
+  <li><strong>☕ Refreshments</strong> available throughout the event</li>
+  <li><strong>🏅 Participation Certificates</strong> for all</li>
+  <li><strong>💼 Internship & Job Opportunities</strong> (incl. PPOs) via partner companies</li>
+  <li><strong>🤝 Collaboration Opportunities</strong> to further develop your project</li>
+  <li><strong>🌐 Networking</strong> with industry leaders, startup founders & AI experts</li>
+
+  <li className="text-yellow-400">
+    🔔 <strong>Note:</strong> The fee of ₹399 covers only the hackathon and the associated perks mentioned—it does not include anything beyond that.
+  </li>
+</ul>
+
 
   <p className="text-lg text-gray-300 mb-10 flex items-center justify-center lg:justify-start gap-2">
     <span>🚀 Show your spark. Collaborate, compete, and create the future of India with AI!</span>
