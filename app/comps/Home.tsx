@@ -61,16 +61,17 @@ export default function Home() {
   </div>
 
   <ul className="list-disc pl-5 mb-6 text-gray-200 space-y-2 text-left">
-  <li><strong>🕘 Time:</strong> 9:00 AM to 3:00 PM (Both Days)</li>
+  <li><strong>🕘 Time:</strong> April 16th 9:00 AM to April 17th 3:00 PM</li>
   <li><strong>👥 Team Size:</strong> 3 to 5 Members</li>
   <li><strong>💸 Registration Fee:</strong> ₹399 per person</li>
-  <li><strong>₹1 Lakh Prize Pool</strong> – Build bold. Win big.</li>
 
+  <h3 className="text-xl font-bold text-yellow-300 mt-4 mb-2">🚀 Why You *Can&apos;t* Miss This – Perks & Powerups</h3>
+
+  <li><strong>₹1 Lakh Prize Pool</strong> – Build bold. Win big.</li>
   <li><strong>Certification & Swag</strong> – Show off your hustle.</li>
   <li><strong>Problem Statements Revealed Early</strong> – Get a head start!</li>
   <li><strong>Mentorship from Tech Giants</strong> – Code with the pros.</li>
   <li><strong>National-Level Recognition</strong> – Get spotted by recruiters & incubators.</li>
-
   <li><strong>🍽️ Meals Included:</strong> Lunch & dinner on April 16<sup>th</sup>, breakfast & lunch on April 17<sup>th</sup></li>
   <li><strong>☕ Refreshments</strong> available throughout the event</li>
   <li><strong>🏅 Participation Certificates</strong> for all</li>
@@ -82,6 +83,7 @@ export default function Home() {
     🔔 <strong>Note:</strong> The fee of ₹399 covers only the hackathon and the associated perks mentioned—it does not include anything beyond that.
   </li>
 </ul>
+
 
 
   <p className="text-lg text-gray-300 mb-10 flex items-center justify-center lg:justify-start gap-2">

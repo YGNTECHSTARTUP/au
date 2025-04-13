@@ -39,7 +39,24 @@ export default function AccommodationFacilities() {
         },
         {
           icon: <Building className="h-5 w-5 text-muted-foreground shrink-0 mt-0.5" />,
-          text: "Dormitory: ₹300/- per person (Bed)"
+          text: "Dormitory: ₹250/- per person (Bed)"
+        }
+      ]
+    },
+    blueHomess: {
+      title: "Blue Homes",
+      description: "Allipuram Location",
+      // <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d15201.676472159701!2d83.29774425202017!3d17.7248803815334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x3a394346f0a9c1c5%3A0x4608554bf84fcdd0!2sDepartment%20of%20Computer%20Science%20%26%20Systems%20Engineering%2C%20College%20of%20Engineering%2C%20AU%20North%20Campus%2C%20Andhra%20University%20North%20Campus%2C%20Andhra%20University%2C%20Visakhapatnam%2C%20Andhra%20Pradesh!3m2!1d17.729842899999998!2d83.318083!4m5!1s0x3a39431ff30b8a53%3A0x16cd316cdf40bd5c!2sBlue%20Homes%2C%20Railway%20Quarters%2C%20Mahaarajupeta%2C%20Visakhapatnam%2C%20Andhra%20Pradesh%20530020!3m2!1d17.7198469!2d83.2945881!5e0!3m2!1sen!2sin!4v1744556261712!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      mapSrc:
+        "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d15201.676472159701!2d83.29774425202017!3d17.7248803815334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x3a394346f0a9c1c5%3A0x4608554bf84fcdd0!2sDepartment%20of%20Computer%20Science%20%26%20Systems%20Engineering%2C%20College%20of%20Engineering%2C%20AU%20North%20Campus%2C%20Andhra%20University%20North%20Campus%2C%20Andhra%20University%2C%20Visakhapatnam%2C%20Andhra%20Pradesh!3m2!1d17.729842899999998!2d83.318083!4m5!1s0x3a39431ff30b8a53%3A0x16cd316cdf40bd5c!2sBlue%20Homes%2C%20Railway%20Quarters%2C%20Mahaarajupeta%2C%20Visakhapatnam%2C%20Andhra%20Pradesh%20530020!3m2!1d17.7198469!2d83.2945881!5e0!3m2!1sen!2sin!4v1744556261712!5m2!1sen!2sin",
+      details: [
+        {
+          icon: <MapPin className="h-5 w-5 text-muted-foreground shrink-0 mt-0.5" />,
+          text: "Distance from college: Check with administration"
+        },
+        {
+          icon: <Building className="h-5 w-5 text-muted-foreground shrink-0 mt-0.5" />,
+          text: "Dormitory: ₹250/- per person (Bed)"
         }
       ]
     },
