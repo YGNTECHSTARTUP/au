@@ -16,11 +16,11 @@ interface ProblemCardProps {
 export function ProblemCard({ problem, onClick }: ProblemCardProps) {
   const [isHovered, setIsHovered] = useState(false)
 
-  const difficultyColor = {
-    easy: "bg-green-100 text-green-800",
-    medium: "bg-yellow-100 text-yellow-800",
-    hard: "bg-red-100 text-red-800",
-  }
+  // const difficultyColor = {
+  //   easy: "bg-green-100 text-green-800",
+  //   medium: "bg-yellow-100 text-yellow-800",
+  //   hard: "bg-red-100 text-red-800",
+  // }
 
   return (
     <Card
@@ -36,13 +36,13 @@ export function ProblemCard({ problem, onClick }: ProblemCardProps) {
             </Badge>
           </div>
         )}
-        {problem.difficulty && (
+        {/* {problem.difficulty && (
           <div className="absolute top-3 left-3">
             <span className={`text-xs px-2 py-1 rounded-full ${difficultyColor[problem.difficulty]}`}>
               {problem.difficulty.charAt(0).toUpperCase() + problem.difficulty.slice(1)}
             </span>
           </div>
-        )}
+        )} */}
         <h3 className="text-xl font-bold mt-4">{problem.title}</h3>
         <p className="text-gray-500">{problem.subtitle}</p>
       </CardHeader>
