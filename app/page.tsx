@@ -5,6 +5,7 @@ import SponsorsSection from './comps/sponsors'
 import { Tracks } from './comps/tracks'
 import FAQPage from './comps/faq'
 import ProblemStatements from './comps/ProblemStatement'
+import HackathonEssentials from './comps/hackathon-essentials'
 // import { PrizeCard } from './comps/prize-card'
 
 const page = () => {
@@ -17,6 +18,7 @@ const page = () => {
         <SponsorsSection/>
         <Tracks/>
         <ProblemStatements/>
+        <HackathonEssentials/>
         <FAQPage/>
         
     
