@@ -25,7 +25,7 @@ import {
         {
           question: "Is there a registration fee?",
           answer:
-            "Yes, the registration fee is ₹399 per person. This covers meals, swag, access to AU Fest, and the entire hackathon experience. Note: The fee is non-refundable."
+            "Yes, the registration fee is ₹399 per person. This covers meals, swag and the entire hackathon experience. Note: The fee is non-refundable."
         },
         {
           question: "Are food and beverages provided?",
